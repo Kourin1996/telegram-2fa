@@ -1,0 +1,9 @@
+{
+  "sites": [
+    {
+      "slug": "limited-byte-numerous",
+      "distDir": "dist",
+      "buildCommand": "pnpm run build"
+    }
+  ]
+}
