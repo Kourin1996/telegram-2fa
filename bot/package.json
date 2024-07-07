@@ -1,0 +1,20 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "rollup": "rollup -c",
+    "webpack": "webpack-cli --config webpack.config.js",
+    "deploy": "pnpm webpack && fleek functions deploy --name my-first-function --path ./dist/index.js --private --envFile ./.env"
+  },
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-wasm": "^6.2.2",
+    "rollup": "^2.60.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
